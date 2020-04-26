@@ -37,8 +37,14 @@ function select(err, response)
 		var quantity = response[0].stock_quantity;
 		total = response[0].price * amount;
 		connection.query("UPDATE products SET ? WHERE ?",
-			[{stock_quantity: quantity - amount}, {item_id: id}],
-			update);
+			[{
+				stock_quantity: quantity - amount,
+				product_sales: response[0].price * amount
+			},
+			{
+				item_id: id,
+				item_id: id
+			}], update);
 	}
 }
 
