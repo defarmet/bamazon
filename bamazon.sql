@@ -20,7 +20,11 @@ insert into products (product_name, department_name, price, stock_quantity) valu
 ("Hand Sanitizer", "Health", 15.99, 1),
 ("Nintendo Switch", "Gaming", 299.99, 3),
 ("Xbox One X", "Gaming", 399.99, 10),
-("Cloth Masks", "Health", 10.99, 2);
+("Cloth Masks", "Health", 10.99, 2),
+("Paper Towel", "Home", 22.99, 4),
+("Frozen Pizza", "Food", 8.99, 10),
+("Bottled water", "Food", 12.99, 38),
+("PlayStstion 4 Pro", "Gaming", 399.99, 18);
 
 create table departments (
 	department_id int not null auto_increment,
@@ -31,4 +35,6 @@ create table departments (
 
 insert into departments (department_name, over_head_costs) values
 ("Gaming", 399),
-("Home", 100);
+("Home", 100),
+("Health", 42),
+("Food", 128);
