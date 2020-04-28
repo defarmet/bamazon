@@ -19,7 +19,7 @@ Shows all products with an inventory count of 4 or less.
 
 Enter the item ID and the amount to add to stock when prompted.
 
-## Add Item 
+### Add Item 
 
 Enter the item name, department, price, and amount in stock when prompted.
 
